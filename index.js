@@ -4,7 +4,7 @@ export default {
     // Only allow POST to /send-email
     const url = new URL(request.url);
     if (request.method === 'GET' && url.pathname === '/') {
-      return json({ status: 'sku-email-api is running' });
+      return json({ status: 'resendapi is running' });
     }
 
     if (request.method !== 'POST' || url.pathname !== '/send-email') {
