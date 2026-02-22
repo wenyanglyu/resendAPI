@@ -1,4 +1,4 @@
-# sku-email-api — Setup Guide
+# resendapi — Setup Guide
 
 ## Prerequisites
 
@@ -35,18 +35,6 @@ Go to your Worker → **Settings** → **Variables and Secrets**
 | `RESEND_API_KEY` | Secret | API key from Step 1 |
 
 > To change the recipient later, just update `RECIPIENT_EMAIL` here. No app change needed.
-
----
-
-## Step 4 — Update SKU Trainer
-
-In `UploadService.cs`, set the Worker URL:
-
-```csharp
-private const string EmailApiUrl = "https://resendapi.<your-subdomain>.workers.dev/send-email";
-```
-
-Your subdomain is visible in the Cloudflare Worker dashboard under the worker URL.
 
 ---
 
