@@ -11,6 +11,12 @@ export default {
       return json({ error: 'Not found' }, 404);
     }
 
+    // Check secret key
+    const apiKey = request.headers.get('X-API-Key');
+    if (apiKey !== env.API_SECRET) {
+      return json({ error: 'Unauthorized' }, 401);
+    }
+    
     // Parse body
     let body;
     try {
