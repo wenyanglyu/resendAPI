@@ -33,6 +33,7 @@ Go to your Worker → **Settings** → **Variables and Secrets** (at runtime)
 |-----|------|-------|
 | `RECIPIENT_EMAIL` | Plain text | Your Resend registered email address |
 | `RESEND_API_KEY` | Secret | API key from Step 1 |
+| `API_SECRET` | Secret | API key consistent between cloudflare and App |
 
 > To change the recipient later, just update `RECIPIENT_EMAIL` here. No app change needed.
 
