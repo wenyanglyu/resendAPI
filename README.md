@@ -2,8 +2,8 @@
 
 ## Prerequisites
 
-- Free account on [Resend.com](https://resend.com)
-- Free account on [Cloudflare.com](https://cloudflare.com)
+- Free account on [Resend.com](https://resend.com), register with admin@sif.com, the free account only support to send emails to the registered Email
+- Free account on [Cloudflare.com](https://cloudflare.com), recommend to register with admin@sif.com
 
 ---
 
@@ -27,7 +27,7 @@
 
 ## Step 3 — Cloudflare: Add Environment Variables
 
-Go to your Worker → **Settings** → **Variables and Secrets**
+Go to your Worker → **Settings** → **Variables and Secrets** (at runtime)
 
 | Key | Type | Value |
 |-----|------|-------|
